@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url("l.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 50%;
+  border: none;
+  margin: 2% auto;
+  padding: 20px;
+}
+
+form .img {
+  position: relative;
+  margin: 10px auto;
+  width: 100px;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+  color: orangered;
+  padding: 5px;
+  text-shadow: 3px 0px 5px white;
+}
+.container form {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 13px;
+  box-sizing: border-box;
+}
+form .form-group {
+  position: relative;
+  border: none;
+  width: 100%;
+}
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 30%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.btn input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: rgb(38, 116, 180);
+}
+form label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+form .form-group input:focus ~ label {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  color: #999;
+  font-size: 13px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+form .form-group input:valid ~ label {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  color: #f7497d;
+  font-size: 13px;
+  transition: 0.5s;
+  pointer-events: none;
+}
